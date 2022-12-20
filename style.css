@@ -1,0 +1,107 @@
+:root{
+    --colorPrimary:#19a2ae;
+    --colorSecondary:#2d3248;
+    --colorTerciary:#6a6f81;
+    --colorNeutral:#969696;
+    --fuente:'Kumbh Sans', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:var(--fuente);
+    color:var(--colorSecondary);
+}
+article{
+    height:100vh;
+    width:100%;
+    background-color: var(--colorPrimary);
+    background-image: url('./images/bg-pattern-top.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius:1rem;
+    overflow: hidden;
+}
+
+
+.card .card-img {
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:absolute;
+    top:13rem;
+    left:39rem;
+    border:.3rem solid white;
+    margin-top: calc(-4rem -1rem);
+    width:8rem;
+    height:8rem;
+
+    
+}
+
+.card .name-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    font-weight: 700;
+}
+
+.card .name-position .name{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.2rem;
+    color: var(--colorSecondary);
+    margin-top:.1rem;
+    text-transform: capitalize;
+
+}
+
+.card .name-position span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin-left: .5rem;
+    color: var(--colorTerciary);
+}
+
+.card .puntuacion{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.card .puntuacion .followers,
+.card .puntuacion .likes,
+.card .puntuacion .photos{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction:column;
+    font-weight: 200;
+    font-size:.7rem;
+    margin:2rem;
+    /* letter-spacing: .2rem; */
+}
+
+.card .puntuacion h3{
+    font-size: 1.2rem;
+}
+
+.card-body-text{
+    text-align: center;
+    font-size: .9rem;
+    font-weight:200;
+    margin-top:.5rem;
+}
+
+
